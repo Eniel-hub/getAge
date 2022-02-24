@@ -1,4 +1,4 @@
-const pple = require("./pple.json");
+const pple = require("./pple.json"); //get data
 
 function computeAge(pers){
     let DOB = new Date(pers.birthdate); //get birthdate
@@ -9,4 +9,4 @@ function computeAge(pers){
     let age = year - YOB;
     console.log(pers.name +" is " +age +" years old.");
 }
-pple.forEach(computeAge)
+pple.forEach(computeAge) //loop through all the data
